@@ -401,8 +401,10 @@ th {
   padding: 0;
 }
 .Header {
+  background: url("img/bg1.jpg") #000 50% 35%;
   padding: 1em;
   text-align: center;
+  color: #fff;
 }
 .Header-container {
   display: inline-block;
@@ -416,7 +418,7 @@ th {
   display: none;
   width: 300px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 760px) {
   .Header-icons {
     display: inline-block;
   }
@@ -460,6 +462,14 @@ th {
   padding: 1em;
   text-align: center;
   margin-top: 0.5em;
+}
+.Offer2 {
+  display: none;
+}
+@media only screen and (min-width: 760px) {
+  .Offer2 {
+    display: inline-block;
+  }
 }
 .Service {
   color: #fff;
@@ -511,11 +521,21 @@ th {
   vertical-align: top;
 }
 @media only screen and (min-width: 600px) {
+  .Service {
+    text-align: left;
+  }
   .Service-body {
     display: block;
   }
   .Service-body img {
     display: block;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .Service {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
   }
 }
 .Services {
@@ -527,6 +547,11 @@ th {
 }
 .Services-list {
   padding: 0;
+}
+@media only screen and (min-width: 600px) {
+  .Services {
+    text-align: center;
+  }
 }
 .Footer {
   background: #58595b;
