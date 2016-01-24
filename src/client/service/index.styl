@@ -1,0 +1,71 @@
+.Service
+  color white
+  list-style none
+  padding 1em
+
+  &-body
+    transition all 1s
+    padding 1.5em
+    overflow hidden
+    font-size 1.1em
+    line-height 1.5em
+    border-bottom 1px solid white
+    padding 0
+    margin 0
+    opacity 0
+    height 0
+
+
+    &.active
+      display block
+      opacity 1
+      height initial
+      padding 1.5em
+
+    img
+      height 150px
+      float right
+      display none
+
+  &-title
+    display inline-block
+    padding 0
+    margin 0
+    font-size 1em
+    text-transform uppercase
+
+  &-header
+    padding .5em
+    vertical-align middle
+    border-radius 10px 10px 0 0
+
+  &-image
+    height 50px
+    vertical-align middle
+    margin-right .5em
+
+  &-detailList
+    padding 0
+    display inline-block
+    vertical-align top
+
+@media only screen and (min-width 600px)
+  .Service
+    text-align left
+    &-body
+      transition all 1s
+      padding 1.5em
+      overflow hidden
+      font-size 1.1em
+      line-height 1.5em
+      border-bottom 1px solid white
+      display block
+      opacity 1
+      height initial
+      img
+        display block
+@media only screen and (min-width 760px)
+  .Service
+    display: inline-block;
+    width: 40%;
+    text-align: left;
